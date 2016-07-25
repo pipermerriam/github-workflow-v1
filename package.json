@@ -1,0 +1,17 @@
+{
+  "name": "cql-github-workflow",
+  "version": "1.0.0",
+  "description": "Project for learning the basic github workflow",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jslint index.js src/*",
+    "test": "jasmine-node spec/"
+  },
+  "author": "Piper Merriam <pipermerriam@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine-node": "^1.14.5",
+    "jslint": "^0.10.1"
+  }
+}

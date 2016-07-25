@@ -1,0 +1,12 @@
+language: node
+node: "5.4"
+dist: trusty
+sudo: false
+env:
+  matrix:
+    - NPM_RUN=test
+    - NPM_RUN=lint
+install:
+  - npm install
+script:
+  - npm run $NPM_RUN
