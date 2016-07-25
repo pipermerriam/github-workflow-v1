@@ -1,4 +1,4 @@
-language: node
+language: node_js
 node: "5.4"
 dist: trusty
 sudo: false
