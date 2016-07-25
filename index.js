@@ -3,13 +3,15 @@ var isSeven = require('./src/isSeven');
 var rollDice = require('./src/rollDice');
 var intComma = require('./src/intComma');
 var intWord = require('./src/intWord');
+var intOrdinal = require('./src/intOrdinal');
 
 var CQL = {
   greet: greet,
   isSeven: isSeven,
   rollDice: rollDice,
   intComma: intComma,
-  intWord: intWord
+  intWord: intWord,
+  intOrdinal: intOrdinal
 };
 
 
