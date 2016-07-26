@@ -4,7 +4,7 @@ function intOrginal(value) {
 
   "use strict";
 
-  
+
   var Ordinal;
   if((value%100 >= 11) && (value%100 <=20)) {
     Ordinal = value + "th"
@@ -36,6 +36,8 @@ function intOrginal(value) {
   }
   console.log("Ordinal value is ",Ordinal);
   return Ordinal;
+
+  //this is a change test comment
   /*
    *  Converts an integer to an ordinal representation
    *  1 => 1st
