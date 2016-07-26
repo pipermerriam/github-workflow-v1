@@ -3,14 +3,15 @@ function intWord(value) {
   /*
    *  Converts an integer to a friendly text representation
    */
+   value = value.toString();
 
-   var firstDigit = value.slice(0);
+   var firstDigit = value.slice(0, 1);
+   var appendWith = value.slice(1);
+   if (appendWith.length === 3) {
+     var units = "thousand";
+   }
 
-  if value.
-
-
-
-  return "1 thousand";
+   return firstDigit + " " + units;
 }
 
 module.exports = intWord;
