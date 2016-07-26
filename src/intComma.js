@@ -6,10 +6,13 @@ function intComma(value) {
   var stringValue = value.toString()
   var segments = []
   while (stringValue.length > 2) {
-    segments.push(stringValue.substring(-3))
-    stringValue = stringValue.substr(0, stringValue.length-3)
+    segments.push(stringValue.substring(stringValue.length-3))
+    stringValue = stringValue.substring(0, stringValue.length-3)
   }
-  return stringValue.join(',')
+  segments.push(stringValue)
+  return segments.reverse()
+    .join(',')
+    .replace(/^,/, '')
 }
 
 module.exports = intComma;
