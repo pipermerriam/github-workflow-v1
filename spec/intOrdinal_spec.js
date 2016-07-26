@@ -1,7 +1,8 @@
 var CQL = require("../index");
 
 describe("CQL.intOrdinal", function() {
-  xit("Converts 1 to 1st", function() {
+  it("Converts 1 to 1st", function() {
+    expect(CQL.intOrdinal(1)).toEqual('1st');
   });
 
   xit("Converts 2 to 2nd", function() {
@@ -10,4 +11,3 @@ describe("CQL.intOrdinal", function() {
   xit("Converts 3 to 3rd", function() {
   });
 });
-
