@@ -6,14 +6,14 @@ function intOrginal(value) {
 
 
   var Ordinal;
-  if((value % 100 >= 11) && (value % 100 <= 20)) {
-    Ordinal = value + "th"
+  if ((value % 100 >= 11) && (value % 100 <= 20)) {
+    Ordinal = value + "th";
     return Ordinal;
-  }
+  };
   value = value % 10;
   switch (value) {
     case 1:
-      Ordinal = value +  "st";
+      Ordinal = value + "st";
       break;
     case 2:
       Ordinal = value + "nd";
@@ -24,7 +24,7 @@ function intOrginal(value) {
     default:
       Ordinal = value + "th";
       break;
-  }
+  };
   console.log("Ordinal value is ",Ordinal);
   return Ordinal;
 
