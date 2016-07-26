@@ -1,30 +1,35 @@
 function intOrginal(value) {
+
+  //   Function suffixes and returns a ordinal value;
+  
   "use strict";
 
   var Ordinal;
-  switch value:
+  switch (value) {
 
-  case 1:
+      case 1:
 
-      Ordinal = value +  "st";
-      break;
-
-  case 2:
-
-      Ordinal = value + "nd";
-      break;
-
-  case 3:
-
-        Ordinal = value + "rd";
-        break;
-
-  default:
-
-          Ordinal = value + "th";
+          Ordinal = value +  "st";
           break;
-  console.log("Orindla",Ordinal);
-  return Ordinal;        
+
+      case 2:
+
+          Ordinal = value + "nd";
+          break;
+
+      case 3:
+
+            Ordinal = value + "rd";
+            break;
+
+      default:
+
+              Ordinal = value + "th";
+              break;
+
+  }
+  console.log("Ordinal value is ",Ordinal);
+  return Ordinal;
   /*
    *  Converts an integer to an ordinal representation
    *  1 => 1st
