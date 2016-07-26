@@ -9,7 +9,7 @@ function intOrginal(value) {
   if ((value % 100 >= 11) && (value % 100 <= 20)) {
     Ordinal = value + "th";
     return Ordinal;
-  } ;
+  }
   value = value % 10;
   switch (value) {
   case 1:
@@ -24,8 +24,8 @@ function intOrginal(value) {
   default:
     Ordinal = value + "th";
     break;
-  };
-  console.log("Ordinal value is ",Ordinal);
+  }
+  console.log("Ordinal value is ", Ordinal);
   return Ordinal;
 
   //this is a change test comment
@@ -38,7 +38,7 @@ function intOrginal(value) {
    *  3 => 3rd
    */
   /*jslint unparam: true*/
-  return "1st";
+  // return "1st";
 }
 
 module.exports = intOrginal;
