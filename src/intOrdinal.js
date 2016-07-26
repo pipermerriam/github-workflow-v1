@@ -1,4 +1,4 @@
-function intOrginal(value) {
+function intOrdinal(value) {
   "use strict";
   /*
    *  Converts an integer to an ordinal representation
@@ -10,4 +10,4 @@ function intOrginal(value) {
   return "1st";
 }
 
-module.exports = intOrginal;
+module.exports = intOrdinal;
