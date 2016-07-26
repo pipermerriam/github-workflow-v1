@@ -24,7 +24,7 @@ function intOrginal(value) {
           Ordinal = value + "th";
           break;
   console.log("Orindla",Ordinal);
-  return         
+  return Ordinal;        
   /*
    *  Converts an integer to an ordinal representation
    *  1 => 1st
