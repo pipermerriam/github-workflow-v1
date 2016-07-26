@@ -1,6 +1,7 @@
 var CQL = require("../index");
 
 describe("CQL.intWord", function() {
-  xit("Converts 1000 to 1 thousand", function() {
+  it("Converts 1000 to 1 thousand", function() {
+    expect(CQL.intWord(1000)).toBe("1 thousand");
   });
 });

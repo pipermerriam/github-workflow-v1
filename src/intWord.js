@@ -3,8 +3,14 @@ function intWord(value) {
   /*
    *  Converts an integer to a friendly text representation
    */
-  /*jslint unparam: true*/
-  return "1";
+
+   var firstDigit = value.slice(0);
+
+  if value.
+
+
+
+  return "1 thousand";
 }
 
 module.exports = intWord;
