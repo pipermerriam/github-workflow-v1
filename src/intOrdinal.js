@@ -1,10 +1,16 @@
 function intOrginal(value) {
 
   //   Function suffixes and returns a ordinal value;
-  
+
   "use strict";
 
+  
   var Ordinal;
+  if((value%100 >= 11) && (value%100 <=20)) {
+    Ordinal = value + "th"
+    return Ordinal;
+  }
+  value = value%10;
   switch (value) {
 
       case 1:

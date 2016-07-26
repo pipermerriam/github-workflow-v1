@@ -19,4 +19,19 @@ describe("CQL.intOrdinal", function() {
     expect(CQL.intOrdinal(4)).toEqual('4th');
 
   });
+
+  it("Converts 11 to 11th", function() {
+    expect(CQL.intOrdinal(11)).toEqual('11th');
+
+  });
+  it("Converts 20 to 20th", function() {
+    expect(CQL.intOrdinal(20)).toEqual('20th');
+
+  });
+
+  xit("Converts 21 to 21st", function() {
+    expect(CQL.intOrdinal(21)).toEqual('21st');
+
+  });
+
 });
